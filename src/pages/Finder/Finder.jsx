@@ -25,7 +25,8 @@ return (
     <ul>
             { filterededList && filterededList.map(character => {
                 return (
-                    <Character key = {character.id} id = {character.id} image = {character.image} name = {character.name}/>
+                    <Character key = {character.id} 
+                    character = {character}/>
                 )
             })}
         </ul>

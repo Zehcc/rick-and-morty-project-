@@ -26,12 +26,13 @@ const Characters = () => {
     
 return (
     <div>
-        {/* <Form characters = {characters} setFilteredList = {setFilteredList}/> */}
         <Buttons counter = {counter} nextPage={nextPage} previousPage={previousPage}/>
         <ul>
             { characters && characters.map(character => {
                 return (
-                    <Character key = {character.id} image = {character.image} name = {character.name}/>
+                    <Character 
+                    key = {character.id} 
+                    character= {character} />
                 )
             })}
         </ul>
