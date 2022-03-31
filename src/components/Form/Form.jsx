@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 
 const Form = ({characters, setFilteredList}) => {
-
     const [inputValue,setInputValue] = useState('')
     const handleInputChange = (e) => {
         setInputValue(e.target.value)
@@ -11,10 +10,7 @@ const Form = ({characters, setFilteredList}) => {
         if(!name){
             alert('Escribe algo!')
         } else {
-            console.log(characters)
-            console.log(name)
             const filteredChar  = characters.filter((character)=> (character.name.toUpperCase().includes(inputValue.toUpperCase())));
-            console.log(filteredChar)
             if(filteredChar.length){
             setFilteredList(filteredChar)
             } else {alert(`${name} no existe`)}

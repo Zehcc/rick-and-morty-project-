@@ -1,14 +1,11 @@
 @import './base/_mixins.scss';
 @import './base/_variables.scss';
-@import '../pages/Characters/characters';
+@import '../pages/Characters/_characters';
+@import '../pages/Home/home';
+@import '../components/Navbar/_navbar';
 
-nav{
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
+
+
 
 .App {
   text-align: center;

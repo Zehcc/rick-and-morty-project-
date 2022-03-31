@@ -3,21 +3,19 @@ import Characters from './pages/Characters/Characters'
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Finder from "./pages/Finder/Finder";
+import Home from "./pages/Home/Home";
 
 function App() {
-  let numbers = [];
-    for (let i=1; i<826; i++) {
-      numbers = [...numbers, i]
-    }
-  const url = 'https://rickandmortyapi.com/api/character/'+numbers;
+  
   return (
     <>
     <Router>
         <Navbar/>
       <Routes>
+        <Route path="home" element={<Home/>}/>
         <Route path="characters" element={<Characters/>}/>
-        <Route path="finder" element={<Finder url = {url}/>}/>
-        <Route path="*" element={<Navigate to="characters"/>}/>
+        <Route path="finder" element={<Finder/>}/>
+        <Route path="*" element={<Navigate to="home"/>}/>
       </Routes>
     </Router>
     </>
