@@ -3,10 +3,18 @@
 @import '../pages/Characters/_characters';
 @import '../pages/Home/home';
 @import '../components/Navbar/_navbar';
+@import '../pages/Finder/_finder';
+@import '../pages/DetailedChar/_detailedChar';
 
 
 
 
 .App {
   text-align: center;
+}
+
+body {
+  background-color: #fef6e4;
+  margin: 0;
+  padding: 0;
 }

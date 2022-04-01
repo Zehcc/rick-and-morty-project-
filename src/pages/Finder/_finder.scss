@@ -1,0 +1,17 @@
+.finderDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;  
+}
+
+.bigImage{
+    margin-top: 10px;
+    width: 100%;
+    max-width: 1430px;
+    min-width: 400px;
+    border-radius: 25px;
+
+}
+    

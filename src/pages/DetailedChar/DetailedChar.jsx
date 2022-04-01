@@ -20,8 +20,12 @@ const DetailedChar = () => {
   
   return (
     detailedChar &&
-    <div>
+    <div className='detailedContainer'>
+      <div className='detailedChar'>
+      <div className='detailedImage'>
       <img src={detailedChar.image} alt={detailedChar.name} />
+      </div>
+      <div className='detailedText'>
       <h3>#{detailedChar.id}</h3>
       <p><b>Nombre</b></p>
       <p>{detailedChar.name}</p>
@@ -31,8 +35,9 @@ const DetailedChar = () => {
       <p>{detailedChar.gender}</p>
       <p><b>Especie</b></p>
       <p>{detailedChar.species}</p>
-      <p><b>Api URL</b></p>
-      <a href={url}>{url}</a>
+      <a href={url}><b>Api URL</b></a>
+      </div>
+      </div>
     </div>
     
   )

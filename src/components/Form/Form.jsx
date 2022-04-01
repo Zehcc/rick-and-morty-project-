@@ -19,9 +19,9 @@ const Form = ({characters, setFilteredList}) => {
     }
 
   return (
-    <div>
+    <div className='finderDiv'>
         <form onSubmit={(e) => searchCharacter(e, inputValue)}>
-            <input onChange={handleInputChange} value = {inputValue} type="text" />
+            <input onChange={handleInputChange} value = {inputValue} type="text" placeholder='Escribe un personaje'/>
         </form>
         <button onClick={()=>setFilteredList([])}>Delete</button>
     </div>

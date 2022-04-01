@@ -4,14 +4,46 @@ nav{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 100px;
+    height: 80px;
     margin: 0;
     padding: 0;
     width: 100%;
-    background-image:  url("https://i.pinimg.com/originals/28/4e/3f/284e3f10fc09149ce023fa5041299176.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: right;
-    background-color: rgb(40, 36, 55);
+    background-color: #f582ae;
+    position: sticky;
+    top: 0px;
+
+    a{
+      color: #001858;
+      background-color: #8bd3dd;
+      padding: 5px 15px;
+      border-radius: 25px;
+      border: 1px solid #001858;
+      :hover{
+        cursor: pointer;
+      }
+    }
+    
+  }
+
+  .avatarDiv {
+    display: none;
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 75px;
+      width: 160px;
+    }
+    
+    img{
+      width: 70px;
+      border-radius: 50px;
+      margin-right: 10px;
+    }
+
+    p{
+      color: #001858;
+      text-align: center;
+    }
   }
 

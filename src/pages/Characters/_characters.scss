@@ -1,3 +1,11 @@
+.charactersPage {
+    text-align: center;
+}
+
+.pageButtons {
+    margin: 10px 0;
+}
+
 ul {
     display: flex;
     flex-direction: row;
@@ -5,11 +13,18 @@ ul {
     justify-content: center;
     align-items: center;
     list-style: none;
-    margin: 0;
+    margin: -10px 0;
     padding: 0;
 }
 
 li {
     margin: 10px;
     text-align: center;
+    background-color: #f3d2c1;
+    border-radius: 25px;
+    padding-bottom: 10px;
+    img {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
 }

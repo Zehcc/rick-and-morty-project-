@@ -20,15 +20,17 @@ useEffect(() => {
   const [filterededList, setFilteredList] = useState([]);
 
 return (
-    <div>
+    <div className='finderPage'>
     <Form characters = {allCharacters} setFilteredList = {setFilteredList}/>
     <ul>
-            { filterededList && filterededList.map(character => {
+            { filterededList.length ? filterededList.map(character => {
                 return (
-                    <Character key = {character.id} 
-                    character = {character}/>
+                    <li key = {character.id}>
+                      <Character 
+                      character = {character}/>
+                    </li>
                 )
-            })}
+            }): <img className='bigImage' src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2021/06/rick-morty-2381623.jpg?itok=KBfLZ3O6" alt="finder"/>}
         </ul>
     </div>
   )
