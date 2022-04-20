@@ -1,13 +1,10 @@
-@import './base/_mixins.scss';
-@import './base/_variables.scss';
-@import '../pages/Characters/_characters';
-@import '../pages/Home/home';
-@import '../components/Navbar/_navbar';
-@import '../pages/Finder/_finder';
-@import '../pages/DetailedChar/_detailedChar';
-
-
-
+@import "./base/_mixins.scss";
+@import "./base/_variables.scss";
+@import "../pages/Characters/_characters";
+@import "../pages/Home/home";
+@import "../components/Navbar/_navbar";
+@import "../pages/Finder/_finder";
+@import "../pages/DetailedChar/_detailedChar";
 
 .App {
   text-align: center;

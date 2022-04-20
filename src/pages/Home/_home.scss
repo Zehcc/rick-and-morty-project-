@@ -1,18 +1,18 @@
-.imgContainer{
+.imgContainer {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  img {
     width: 100%;
-    height: 100%;
-    text-align: center;
-    img{
-        width: 100%;
-        max-width: 1510px;
-        min-width: 400px;
-    }
+    max-width: 1510px;
+    min-width: 400px;
+  }
 }
-a{
-    color: black;
-    text-decoration: none;
+a {
+  color: black;
+  text-decoration: none;
 }
 
 a:hover {
-    cursor: default;
+  cursor: default;
 }
